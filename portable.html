@@ -334,7 +334,7 @@
             };
 
             function gdLoadSplitFile(which, onProgress) {
-                var base = "http://cdn.jsdelivr.net/gh/nuII-cIient/gd-webport/" + (which === "wasm" ? "gd_web.wasm" : "gd_web.data");
+                var base = which === "wasm" ? "gd_web.wasm" : "gd_web.data";
 
                 var count = GD_SPLIT_COUNTS[which];
 
